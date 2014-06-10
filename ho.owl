@@ -1,0 +1,3046 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.co-ode.org/roberts/heraldry.owl#"
+     xml:base="http://www.co-ode.org/roberts/heraldry.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.co-ode.org/roberts/heraldry.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://www.co-ode.org/roberts/heraldry.owl#AnnotationProperty1">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Easy label</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty1 -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty1">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has profile</rdfs:label>
+        <rdfs:range rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class8"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty3"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty10 -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty10">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has body part attitude</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class63"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class75"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty3"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty11 -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty11">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has field tincture</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty12 -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty12">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has neck severence type</rdfs:label>
+        <rdfs:range rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class82"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Claw-Duplicate"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty13 -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty13">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has creature profile</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class19"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class25"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty2 -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty2">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has behaviour</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class42"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class53"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty3 -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty3">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has attitude</rdfs:label>
+        <rdfs:range rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class8"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class19"/>
+                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class63"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty4 -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty4">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has face attitude</rdfs:label>
+        <rdfs:range rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class30"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class42"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty3"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty5 -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty5">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has body attitude</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class42"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class69"/>
+        <owl:inverseOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty9"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6 -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is charged with</rdfs:label>
+        <rdfs:range rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class12"/>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class2"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty7 -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty7">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has bird attitude</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class43"/>
+        <rdfs:range rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class70"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty3"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8 -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has tincture</rdfs:label>
+        <rdfs:range rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class3"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class12"/>
+                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class2"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty9 -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty9">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is body attitude of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/heraldry.owl#hasPart"/>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#hasQuality -->
+
+    <owl:ObjectProperty rdf:about="http://www.co-ode.org/roberts/heraldry.owl#hasQuality">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#DataProperty1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/roberts/heraldry.owl#DataProperty1">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has tincture priority</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#DataProperty2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.co-ode.org/roberts/heraldry.owl#DataProperty2">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has charge priority</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class12"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class1 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class1">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Escutcheon</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class129"/>
+                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class130"/>
+                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class131"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class29"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#hasPart"/>
+                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class2"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A shield; can have a shield with a field but no charge.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class10 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class10">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dormant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class69"/>
+        <AnnotationProperty1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sleeping</AnnotationProperty1>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sleeping, is lying down with its eyes closed and head lowered, resting upon the forepaws, as if asleep</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class100 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class100">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marshalling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class29"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class101 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class101">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quartering</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class100"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class102 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class102">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fleur-de-lis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class89"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class103 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class103">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lozenge</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class121"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class104 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class104">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fusil</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class121"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A narrow lozenge shape</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class105 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class105">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mascle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class121"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A voided lozenge; that is, with a lozenge shaped hole inside</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class106 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class106">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rustre</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class121"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A lozenge pierced; that is, with a round hole</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class107 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class107">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Billet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class121"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A rounded rectangle</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class108 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class108">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Delf</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class121"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A square</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class109 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class109">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Per fess</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class32"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Halved horizontally</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class11 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class11">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rampant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class69"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">depicted in profile standing erect with forepaws raised; sometimes Standing on one back leg</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class110 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class110">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Per pale</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class32"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Halved vertically</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class111 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class111">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Per saltire</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class32"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diagonally in both directions</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class112 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class112">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Per quarterly</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class32"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">both horizonatally and vertically</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class113 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class113">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Per Chevron</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class32"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">divided in the manner of a chevron</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class114 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class114">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Per pall</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class32"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Divided in to 3 parts in the manner of the letter y</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class115 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class115">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chevron</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class121"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class116 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class116">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Armour part</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class12"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class117 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class117">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mane</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class63"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class118 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class118">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estoile</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class121"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A star with (usually six) wavy rays</rdfs:comment>
+        <AnnotationProperty1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Star with six wavy rays</AnnotationProperty1>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class119 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class119">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Increscent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#crescent"/>
+        <owl:disjointWith rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class120"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">if its horns are to dexter it represents a waxing moon (increscent)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class12 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class12">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Charge</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class29"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class3"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class120 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class120">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Decrescent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#crescent"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Horns to sinister it represents a waning moon (decrescent).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class121 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class121">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ordinary</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class12"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">geometric shpatges and stuff.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class122 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class122">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contrasted tincture</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class87"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class123 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class123">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Armed</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class122"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Claws and horns different tincture to rest of animal.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class124 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class124">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Langued</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class122"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class125 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class125">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pizzled</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class122"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Penis different tincture to rest of animal charge.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class126 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class126">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attired</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class122"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Antlers different tincture to rest of animal charge.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class127 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class127">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unguled</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class122"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hooves different tincture to rest of animal charge.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class128 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class128">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crined</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class122"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Horse&#39;s mane different tincture to rest of animal charge.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class129 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class129">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plain escutcheon</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#hasPart"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class2"/>
+                                    <owl:Class>
+                                        <owl:complementOf>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class12"/>
+                                            </owl:Restriction>
+                                        </owl:complementOf>
+                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class3"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class1"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A tinctured field with no charges.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class13 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class13">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Light tincture</rdfs:label>
+        <owl:equivalentClass rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class4"/>
+        <owl:disjointWith rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class14"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class130 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class130">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coloured Escutcheon and metal charge</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#hasPart"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class2"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class12"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class4"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class4"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class16"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6"/>
+                                        <owl:allValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class12"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class4"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class4"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:allValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class16"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class131 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class131">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metal escutcheon and coloured charge</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class1"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#hasPart"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class2"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class12"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class16"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class16"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class4"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6"/>
+                                        <owl:allValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class12"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class16"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class16"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:allValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class4"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class1"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class132 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class132">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dark</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class9"/>
+        <owl:disjointWith rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class95"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class133 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class133">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eroteme</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class121"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class134 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class134">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Horn</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class63"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class14 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class14">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dark tincture</rdfs:label>
+        <owl:equivalentClass rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class16"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class15 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class15">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Roundel</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class97"/>
+        <owl:disjointWith rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class96"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class16 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class16">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Colour</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class3"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class17 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class17">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Argent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class4"/>
+        <owl:disjointWith rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class18 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class18">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Or</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class4"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class19 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class19">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creature</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class12"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty2"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class53"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty4"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class30"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty1"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class25"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty5"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class69"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class63"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class2 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class2">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Field</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class29"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class3"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <AnnotationProperty1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Background</AnnotationProperty1>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class20 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class20">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vert</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class16"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class21 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class21">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Azure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class16"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class22 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class22">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gules</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class16"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class23 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class23">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Purpure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class16"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class24 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class24">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dexter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class25"/>
+        <owl:disjointWith rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class26"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Facing right, the viewer&#39;s left</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class25 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class25">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creature profile</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class8"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class26 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class26">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Affronté</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class25"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class27 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class27">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Regardant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class30"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class28 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class28">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">segreant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class69"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A creature segreant has both forelegs raised in the air, as a beast rampant, with wings elevated and addorsed.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class29 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class29">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Domain entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class3 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class3">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tincture</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class29"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class30 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class30">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Face attitude</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class8"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class31 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class31">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Leopard</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class42"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class32 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class32">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Line of division</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class29"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class33 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class33">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class42"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class34 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class34">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eagle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class43"/>
+        <owl:disjointWith rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class38"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class35 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class35">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Griffin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class41"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class36 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class36">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Unicorn</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class41"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class37 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class37">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dragon</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class41"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class38 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class38">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raven</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class43"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class39 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class39">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stag</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class42"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class4 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class4">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class3"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class40 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class40">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doe</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class42"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class41 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class41">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fictional creature</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class19"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class42 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class42">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class19"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class43 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class43">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bird</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class19"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class44 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class44">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hooves</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class63"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class45 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class45">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Passant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class69"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">walks toward the viewer&#39;s left, with the right forepaw raised and all others on the ground</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class46 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class46">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coat of arms</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class29"/>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class46"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#hasPart"/>
+                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class47 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class47">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sejant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class69"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sits on his haunches, with both forepaws on the ground</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class48 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class48">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Displayed</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class70"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bird displayed is shown affronté with its head turned to dexter and wings spread to the sides to fill the area of the field. This position is presumed</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class49 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class49">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rising</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class70"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class5 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class5">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fur</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class3"/>
+    </owl:Class>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class5"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class50 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class50">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trussed</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class70"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class51 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class51">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vigilant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class70"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class52 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class52">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sea animal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class19"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class53 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class53">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creature behaviour</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class87"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class54 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class54">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Predatory</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class53"/>
+        <owl:disjointWith rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class55"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class55 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class55">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Docile</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class53"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class56 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class56">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contourné</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class30"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class57 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class57">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trippant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class69"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The counterpart of passant, but for beasts of chase such as stags</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class58 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class58">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sejant erect</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class69"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">seated on its haunches, but with its body erect and both forepaws raised in the rampant position</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class59 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class59">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cadent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class69"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is upside down, especially while supporting an escutcheon</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class6 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class6">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vair</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class5"/>
+        <owl:disjointWith rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class7"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class60 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class60">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Couchant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class69"/>
+        <AnnotationProperty1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lying down, head raised</AnnotationProperty1>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is lying down, but with the head raised. Lodged is the term for this position [Couchant] when applied to the docile animals.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class61 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class61">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salient</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class69"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is leaping, with both hind legs together on the ground and both forelegs together in the air. Springing for docile animals.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class62 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class62">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Statant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class69"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">standing (in profile toward dexter), all four feet on the ground, usually with the forepaws together.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class63 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class63">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Body part</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class12"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Obviously not an animal. Certain features of an animal are often of a contrasting tincture. The charge is then said to be armed (claws and horns), langued (tongue), pizzled (penis), attired (antlers), unguled (hooves), crined (horse&#39;s mane) of a specified tincture.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class64 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class64">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Antler</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class63"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class65 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class65">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Naiant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class69"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An animal or creature naiant is swimming.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class66 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class66">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hauriant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class69"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fish, dolphin, or other sea creature hauriant is in a perpendicular position with its head up.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class67 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class67">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glissant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class69"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A serpent glissant is gliding.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class68 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class68">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">At bay</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class62"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty9"/>
+                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class77"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Same as soemthing else but used for docile beasts</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class69 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class69">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Body attitude</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class8"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class7 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class7">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ermine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class5"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class70 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class70">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bird attitude</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class8"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class71 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class71">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tail</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class63"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class72 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class72">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Teeth</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class63"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class73 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class73">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Claw</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class63"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class74 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class74">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tongue</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class63"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class75 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class75">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Body part attitude</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class8"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class76 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class76">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coward</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class75"/>
+        <AnnotationProperty1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tail down</AnnotationProperty1>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an attitude of the tail; -- tail between the legs.</rdfs:comment>
+    </owl:Class>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class76"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class77 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class77">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Docile animal</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class42"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty2"/>
+                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class55"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class78 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class78">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">At gaze</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class69"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">both statant and guadant; standing on all four legs and looking at the observer</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class79 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class79">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cross</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class121"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class8 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class8">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Attitude</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class87"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class80 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class80">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latin cross</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class79"/>
+        <owl:disjointWith rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class81"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class81 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class81">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Greek cross</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class79"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a cross in which all the arms are of equal length.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class82 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class82">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Neck severence type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class87"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">While cabossed heads are shown facing forward (affronté), heads that are couped or erased face dexter unless otherwise specified for differencing.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class83 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class83">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cabossed</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class82"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">with the head cleanly separated from the neck so that only the face shows; also Cabbaged or caboshed</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class84 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class84">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Couped</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class82"/>
+        <AnnotationProperty1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cleanly severed</AnnotationProperty1>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">with the neck cleanly separated from the body so that the whole head and neck are present;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class85 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class85">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">erased</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class82"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">with the neck showing a ragged edge as if forcibly torn from the body</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class86 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class86">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quatrefoil</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class89"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class87 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class87">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Charge quality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class29"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class88 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class88">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cinquefoil</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class89"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class89 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class89">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flower</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class12"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class9 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class9">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shade</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class29"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class90 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class90">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trefoil</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class89"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class91 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class91">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crown</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class121"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class92 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class92">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Star</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class121"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class93 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class93">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Per bend</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class32"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagonally from upper left to lower right</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class94 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class94">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Helmet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class116"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class95 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class95">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pale</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class9"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class96 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class96">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amulet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class97"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class97 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class97">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">circle charge</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class121"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class98 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class98">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Key</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class121"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Class99 -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class99">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Per bend sinister</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class32"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diagonally from upper right to lower left</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Claw-Duplicate -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Claw-Duplicate">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Head</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class63"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#crescent -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#crescent">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crescent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class121"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#is -->
+
+    <owl:Class rdf:about="http://www.co-ode.org/roberts/heraldry.owl#is">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lodged</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class60"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty9"/>
+                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class77"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Nothing -->
+
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Nothing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#Individual1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Individual1">
+        <rdf:type rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class1"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#hasPart"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class2"/>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class20"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class20"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class133"/>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class17"/>
+                                                            </owl:Restriction>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class17"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#DataProperty2"/>
+                                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class36"/>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class17"/>
+                                                            </owl:Restriction>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class17"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty13"/>
+                                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class24"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#hasPart"/>
+                                                        <owl:someValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class134"/>
+                                                                    <owl:Class>
+                                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                                            <owl:Restriction>
+                                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class22"/>
+                                                                            </owl:Restriction>
+                                                                            <owl:Restriction>
+                                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class22"/>
+                                                                            </owl:Restriction>
+                                                                        </owl:intersectionOf>
+                                                                    </owl:Class>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:someValuesFrom>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#DataProperty2"/>
+                                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6"/>
+                                        <owl:allValuesFrom>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class133"/>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class17"/>
+                                                                    </owl:Restriction>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class17"/>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#DataProperty2"/>
+                                                                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class36"/>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class17"/>
+                                                                    </owl:Restriction>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class17"/>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty13"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class24"/>
+                                                            </owl:Restriction>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#hasPart"/>
+                                                                <owl:someValuesFrom>
+                                                                    <owl:Class>
+                                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                                            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class134"/>
+                                                                            <owl:Class>
+                                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                                    <owl:Restriction>
+                                                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class22"/>
+                                                                                    </owl:Restriction>
+                                                                                    <owl:Restriction>
+                                                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class22"/>
+                                                                                    </owl:Restriction>
+                                                                                </owl:intersectionOf>
+                                                                            </owl:Class>
+                                                                        </owl:intersectionOf>
+                                                                    </owl:Class>
+                                                                </owl:someValuesFrom>
+                                                            </owl:Restriction>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#DataProperty2"/>
+                                                                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:allValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#hasPart"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class2"/>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class20"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class20"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class133"/>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class17"/>
+                                                            </owl:Restriction>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class17"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#DataProperty2"/>
+                                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class36"/>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class17"/>
+                                                            </owl:Restriction>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class17"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty13"/>
+                                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class24"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#hasPart"/>
+                                                        <owl:someValuesFrom>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class134"/>
+                                                                    <owl:Class>
+                                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                                            <owl:Restriction>
+                                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class22"/>
+                                                                            </owl:Restriction>
+                                                                            <owl:Restriction>
+                                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class22"/>
+                                                                            </owl:Restriction>
+                                                                        </owl:intersectionOf>
+                                                                    </owl:Class>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:someValuesFrom>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#DataProperty2"/>
+                                                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6"/>
+                                        <owl:allValuesFrom>
+                                            <owl:Class>
+                                                <owl:unionOf rdf:parseType="Collection">
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class133"/>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class17"/>
+                                                                    </owl:Restriction>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class17"/>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#DataProperty2"/>
+                                                                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class36"/>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class17"/>
+                                                                    </owl:Restriction>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class17"/>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty13"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class24"/>
+                                                            </owl:Restriction>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#hasPart"/>
+                                                                <owl:someValuesFrom>
+                                                                    <owl:Class>
+                                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                                            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class134"/>
+                                                                            <owl:Class>
+                                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                                    <owl:Restriction>
+                                                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class22"/>
+                                                                                    </owl:Restriction>
+                                                                                    <owl:Restriction>
+                                                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class22"/>
+                                                                                    </owl:Restriction>
+                                                                                </owl:intersectionOf>
+                                                                            </owl:Class>
+                                                                        </owl:intersectionOf>
+                                                                    </owl:Class>
+                                                                </owl:someValuesFrom>
+                                                            </owl:Restriction>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#DataProperty2"/>
+                                                                <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</owl:hasValue>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:unionOf>
+                                            </owl:Class>
+                                        </owl:allValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vert with unicorn argent attired gules with  eroteme argent</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#shield02 -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/roberts/heraldry.owl#shield02">
+        <rdf:type rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class1"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#hasPart"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class2"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class33"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty4"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class27"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty5"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class45"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class20"/>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#hasPart"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class71"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty10"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class76"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class20"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Or with lion regardant passant coward vert</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#shield03 -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/roberts/heraldry.owl#shield03">
+        <rdf:type rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class1"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#hasPart"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class2"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class80"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class22"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class22"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class17"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class17"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#hasPart"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class2"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6"/>
+                                        <owl:someValuesFrom>
+                                            <owl:Class>
+                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class80"/>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class22"/>
+                                                    </owl:Restriction>
+                                                    <owl:Restriction>
+                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class22"/>
+                                                    </owl:Restriction>
+                                                </owl:intersectionOf>
+                                            </owl:Class>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class17"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class17"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Argent with latin cross gules</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#shield04 -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/roberts/heraldry.owl#shield04">
+        <rdf:type rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class1"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#hasPart"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class2"/>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Class>
+                                        <owl:complementOf>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6"/>
+                                                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class12"/>
+                                            </owl:Restriction>
+                                        </owl:complementOf>
+                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class20"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">field vert</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">should obey rule of tincture</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#shield05 -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/roberts/heraldry.owl#shield05">
+        <rdf:type rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class1"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#hasPart"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class2"/>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class118"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                            </owl:Restriction>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#crescent"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                            </owl:Restriction>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6"/>
+                                                <owl:allValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:unionOf rdf:parseType="Collection">
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class118"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                                    </owl:Restriction>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#crescent"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                                    </owl:Restriction>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:unionOf>
+                                                    </owl:Class>
+                                                </owl:allValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class21"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class21"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#hasPart"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class2"/>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class118"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                            </owl:Restriction>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#crescent"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                            </owl:Restriction>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6"/>
+                                                <owl:allValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:unionOf rdf:parseType="Collection">
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class118"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                                    </owl:Restriction>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#crescent"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                                    </owl:Restriction>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:unionOf>
+                                                    </owl:Class>
+                                                </owl:allValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class21"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class21"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Azure with Estoile and cresent or</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.co-ode.org/roberts/heraldry.owl#shield06 -->
+
+    <owl:NamedIndividual rdf:about="http://www.co-ode.org/roberts/heraldry.owl#shield06">
+        <rdf:type rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class1"/>
+        <rdf:type>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#hasPart"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class2"/>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class118"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                            </owl:Restriction>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#crescent"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                            </owl:Restriction>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6"/>
+                                                <owl:allValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:unionOf rdf:parseType="Collection">
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class118"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                                    </owl:Restriction>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#crescent"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                                    </owl:Restriction>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:unionOf>
+                                                    </owl:Class>
+                                                </owl:allValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class23"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class23"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#hasPart"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class2"/>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class118"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                            </owl:Restriction>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#crescent"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                            </owl:Restriction>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty6"/>
+                                                <owl:allValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:unionOf rdf:parseType="Collection">
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class118"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                                    </owl:Restriction>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                            <owl:Class>
+                                                                <owl:intersectionOf rdf:parseType="Collection">
+                                                                    <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#crescent"/>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                                    </owl:Restriction>
+                                                                    <owl:Restriction>
+                                                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                                                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class18"/>
+                                                                    </owl:Restriction>
+                                                                </owl:intersectionOf>
+                                                            </owl:Class>
+                                                        </owl:unionOf>
+                                                    </owl:Class>
+                                                </owl:allValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                        <owl:someValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class23"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#ObjectProperty8"/>
+                                        <owl:allValuesFrom rdf:resource="http://www.co-ode.org/roberts/heraldry.owl#Class23"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdf:type>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Purpure with Estoile and cressent or</rdfs:label>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Purple background with a yellow star and cressent</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class83"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class84"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class85"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class35"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class36"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class37"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class20"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class21"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class22"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class23"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class116"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class19"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class63"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class89"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class1"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class12"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class2"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class3"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class46"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class87"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class48"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class49"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class50"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class51"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class109"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class110"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class111"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class112"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class113"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class114"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class93"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class99"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class86"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class88"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class90"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class44"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class64"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class71"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class72"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class73"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class74"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Claw-Duplicate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class53"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class8"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class82"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class117"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class44"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class64"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class71"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class72"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class73"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class74"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Claw-Duplicate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class10"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class11"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class28"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class45"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class47"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class57"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class58"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class59"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class60"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class61"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class62"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class65"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class66"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class67"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class1"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class100"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class12"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class2"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class3"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class32"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class46"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class87"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class123"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class124"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class125"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class126"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class127"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class128"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class71"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class72"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class73"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class74"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Claw-Duplicate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class117"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class134"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class44"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class64"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class71"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class72"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class73"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class74"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Claw-Duplicate"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class122"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class53"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class8"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class82"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class103"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class104"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class105"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class106"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class107"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class108"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class115"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class118"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class79"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class91"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class92"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class97"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class98"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#crescent"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class103"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class104"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class105"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class106"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class107"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class108"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class115"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class118"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class133"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class79"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class91"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class92"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class97"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class98"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#crescent"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class25"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class30"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class69"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class70"/>
+            <rdf:Description rdf:about="http://www.co-ode.org/roberts/heraldry.owl#Class75"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1787) http://owlapi.sourceforge.net -->
+
